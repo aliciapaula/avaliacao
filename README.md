@@ -1,14 +1,13 @@
 Banco de Dados 
 
-CREATE DATABASE formb;
+CREATE DATABASE formB;
+USE formB;
 
-USE formb;
-
-CREATE TABLE Users (
+CREATE TABLE users (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(255),
-    sunname VARCHAR(255),
-    setor VARCHAR(255),
-    usersname VARCHAR(255),
-    password VARCHAR(255)
+    name VARCHAR(255) NOT NULL,
+    sunname VARCHAR(255) NOT NULL,
+    setor VARCHAR(255) NOT NULL,
+    usersname VARCHAR(255) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL
 );
